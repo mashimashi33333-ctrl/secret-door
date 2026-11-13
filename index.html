@@ -25,8 +25,8 @@ h1{font-size:clamp(18px,5.4vw,22px);line-height:1.3;white-space:nowrap;text-alig
 .stage::after{content:'';position:absolute;bottom:11px;left:12%;width:78%;height:23px;border-radius:100%;background:#e5b8ce50;filter:blur(14px);z-index:0}
 .cake-entry{position:absolute;bottom:0;left:44%;width:min(78%,280px);transform:translate(-50%,170px) scale(.45) rotate(-8deg);opacity:0;z-index:3;transform-origin:center bottom}
 .cake-bob{position:relative;width:100%;transform-origin:50% 65%}.art{display:block;width:100%;height:auto;filter:drop-shadow(1px 6px 5px #92677344);pointer-events:none;user-select:none}
-.flame{position:absolute;width:7px;height:12px;border-radius:80% 0 70% 70%;background:linear-gradient(#fff8ab,#ffca43 68%,#f6a566);box-shadow:0 0 11px 4px #ffe5a6aa;transform:rotate(-35deg);opacity:0;top:0;z-index:5;animation:flameFlicker .47s ease-in-out infinite alternate}
-.flame:nth-of-type(2){left:22%;top:6%}.flame:nth-of-type(3){left:29%;top:6%}.flame:nth-of-type(4){left:42%;top:5%}.flame:nth-of-type(5){left:51%;top:2%}.flame:nth-of-type(6){left:59%;top:3%}.flame:nth-of-type(7){left:68%;top:3%}.flame:nth-of-type(8){left:76%;top:2%}
+.flame{position:absolute;width:8px;height:13px;border-radius:80% 0 70% 70%;background:linear-gradient(#fff8ab,#ffca43 68%,#f6a566);box-shadow:0 0 11px 4px #ffe5a6aa;transform:rotate(-35deg);opacity:0;top:4%;left:12.5%;z-index:5;animation:flameFlicker .47s ease-in-out infinite alternate}
+.flame:nth-of-type(2){left:21.5%;top:4.2%}.flame:nth-of-type(3){left:30.5%;top:6.2%}.flame:nth-of-type(4){left:39.5%;top:5.2%}.flame:nth-of-type(5){left:49%;top:2.6%}.flame:nth-of-type(6){left:58.5%;top:3.2%}.flame:nth-of-type(7){left:68.2%;top:3.8%}.flame:nth-of-type(8){left:77.4%;top:2.6%}
 .pom-entry{position:absolute;bottom:48px;left:77%;width:min(51%,183px);transform:translate(-50%,112px) scale(.55) rotate(0deg);opacity:0;z-index:2;transform-origin:center bottom}
 .pom-bob{transform-origin:50% 90%;width:100%}
 .spark{position:absolute;z-index:5;font-size:25px;opacity:0;pointer-events:none;transform:scale(0)}.s1{top:15%;left:9%}.s2{top:13%;right:7%}.s3{top:53%;left:5%}.s4{top:48%;right:0%}.s5{top:66%;left:19%}.s6{top:72%;right:9%}
@@ -82,9 +82,9 @@ h1{font-size:clamp(18px,5.4vw,22px);line-height:1.3;white-space:nowrap;text-alig
 .book.opened + .replay{animation:none;opacity:0}
 .book.cake-settled + .replay{animation:noteIn .45s ease 2.2s both}
 .cute-title{width:100%;white-space:normal;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;font-family:'Hiragino Maru Gothic ProN','Arial Rounded MT Bold','Yu Gothic',system-ui,sans-serif;font-weight:1000;line-height:1.25;margin:1px 0 3px;letter-spacing:.01em;filter:drop-shadow(0 3px 2px #ffb1d286)}
-.cute-title .title-first,.cute-title .title-second{display:block;white-space:nowrap;color:#e84699;-webkit-text-stroke:2px #fff;paint-order:stroke fill;text-shadow:0 2px 0 #c93684,0 5px 9px #f5a8c5}
+.cute-title .title-first,.cute-title .title-second{display:block;white-space:nowrap;color:#fb66aa;-webkit-text-stroke:1.6px #fff;text-shadow:0 3px 0 #d74f8c,1px 5px 4px #f5a8c5}
 .cute-title .title-first{font-size:clamp(18px,5.1vw,23px);transform:rotate(-1.7deg)}
-.cute-title .title-second{font-size:clamp(25px,7.3vw,33px);transform:rotate(1.5deg);color:#f04e99}
+.cute-title .title-second{font-size:clamp(25px,7.3vw,33px);transform:rotate(1.5deg);color:#fd6fa8}
 .cute-title .title-star{position:absolute;color:#ffcf56;font-size:20px;text-shadow:1px 1px #fff;top:13px}
 .cute-title .title-star:first-child{left:2px}.cute-title .title-star:last-child{right:2px;top:37px}
 .book.cake-settled .cute-title{animation:titlePop .7s cubic-bezier(.2,1.3,.3,1) .15s both}
@@ -100,9 +100,9 @@ h1{font-size:clamp(18px,5.4vw,22px);line-height:1.3;white-space:nowrap;text-alig
 
 /* おいわい第二幕：クラッカー → 画面ぜんぶの紙吹雪 → プリン大ジャンプ */
 .cake-bob{overflow:visible}
-.cake-cracker{position:absolute;left:8%;top:41%;width:25%;height:auto;max-width:none;z-index:9;overflow:visible;transform:translate(-20%,-45%) scaleX(-1) rotate(-8deg);transform-origin:20% 80%;filter:drop-shadow(1px 4px 2px #774d6b55);pointer-events:none}
+.cake-cracker{position:absolute;left:-3%;top:31%;width:27%;height:auto;max-width:none;z-index:9;overflow:visible;transform:translate(-8%,-50%) rotate(-18deg);transform-origin:72% 70%;filter:drop-shadow(1px 4px 2px #774d6b55);pointer-events:none}
 .book.cake-settled .cake-cracker{animation:crackWiggle 2.6s ease-in-out infinite 1.2s}
-@keyframes crackWiggle{0%,100%{transform:translate(-20%,-45%) scaleX(-1) rotate(-8deg)}50%{transform:translate(-20%,-45%) scaleX(-1) rotate(-2deg)}}
+@keyframes crackWiggle{0%,100%{transform:translate(-28%,-45%) rotate(5deg)}50%{transform:translate(-28%,-45%) rotate(9deg)}}
 .book.cake-settled .pom-entry{animation:none;opacity:0}
 .book.pom-peek .pom-entry{opacity:1;animation:pomPeek .84s cubic-bezier(.15,1.2,.32,1) both}
 .book.pom-settled .pom-entry{opacity:1;animation:none;transform:translate(-32%,-59px) scale(1) rotate(8deg)}
@@ -213,10 +213,10 @@ h1{font-size:clamp(18px,5.4vw,22px);line-height:1.3;white-space:nowrap;text-alig
    figure.querySelectorAll('.flame').forEach(el=>el.remove());
    figure.style.left=r.left+'px';figure.style.top=r.top+'px';figure.style.width=r.width+'px';
    layer.appendChild(figure);
-   const dx=innerWidth*.40-(r.left+r.width/2);
-   const dy=innerHeight*.47-(r.top+r.height/2);
-   // ケーキはカードより確実に大きく、ほぼ画面幅いっぱいに。
-   const peak=Math.min(2.9,Math.max(1.9,innerWidth*1.35/Math.max(1,r.width)));
+   const dx=innerWidth*.63-(r.left+r.width/2);
+   const dy=innerHeight*.46-(r.top+r.height/2);
+   // ケーキを少し右に寄せて、左手のクラッカーが見えるようにする。
+   const peak=Math.min(2.55,Math.max(1.85,innerWidth*1.12/Math.max(1,r.width)));
    const duration=4130;
    const flight=animate(figure,[
      {offset:0,opacity:0,transform:`translate(${dx}px,${dy+150}px) scale(.3) rotate(-12deg)`},
@@ -230,22 +230,22 @@ h1{font-size:clamp(18px,5.4vw,22px);line-height:1.3;white-space:nowrap;text-alig
    flight.onfinish=()=>{if(run!==thisRun)return;book.classList.add('cake-settled');layer.remove();cakeFly=null;};
  }
  function partyPop(){
-   // 飛び出したケーキの「右手のクラッカー」の口から紙吹雪を飛ばす。
+   // 飛び出したケーキの『左手に持ったクラッカー』の口から紙吹雪を飛ばす。
    const cracker=cakeFly?.querySelector('.cake-cracker');
    const r=cracker?.getBoundingClientRect();
-   const x=r?Math.max(25,Math.min(innerWidth-28,r.left+r.width*.77)):innerWidth*.76;
-   const y=r?Math.max(30,Math.min(innerHeight-50,r.top+r.height*.23)):innerHeight*.46;
+   const x=r?Math.max(25,Math.min(innerWidth-28,r.left+r.width*.84)):innerWidth*.39;
+   const y=r?Math.max(30,Math.min(innerHeight-50,r.top+r.height*.18)):innerHeight*.33;
    const layer=addScene(document.createElement('div'));layer.className='party-layer';
    const flash=document.createElement('div');flash.className='pop-flash';flash.style.left=x+'px';flash.style.top=y+'px';layer.appendChild(flash);
    const colors=['#ff8cba','#ffdd51','#8fd7ff','#adf3c8','#cfacf7','#fff7bd','#ffad74','#ef78b8'];
-   for(let i=0;i<180;i++){
+   for(let i=0;i<136;i++){
      const el=document.createElement('i');el.className='confetti-piece';el.style.left=x+'px';el.style.top=y+'px';
-     const w=4+Math.random()*7,h=7+Math.random()*13;
+     const w=5+Math.random()*8,h=7+Math.random()*12;
      el.style.width=w+'px';el.style.height=h+'px';el.style.backgroundColor=colors[i%colors.length];
-     el.style.borderRadius=i%9===0?'50%':'2px';layer.appendChild(el);
-     const midX=(Math.random()*1.12-.06)*innerWidth-x;
-     const midY=(Math.random()*.91+.015)*innerHeight-y;
-     const drift=(Math.random()-.5)*110,spin=(Math.random()>.5?1:-1)*(420+Math.random()*900);
+     el.style.borderRadius=i%5===0?'50%':'2px';layer.appendChild(el);
+     const midX=(Math.random()*.99+.005)*innerWidth-x;
+     const midY=(Math.random()*.81+.035)*innerHeight-y;
+     const drift=(Math.random()-.5)*85,spin=(Math.random()>.5?1:-1)*(360+Math.random()*850);
      const endY=innerHeight-y+80+Math.random()*120;
      animate(el,[
        {offset:0,opacity:0,transform:'translate(0px,0px) scale(.3) rotate(0deg)'},
@@ -265,7 +265,7 @@ h1{font-size:clamp(18px,5.4vw,22px);line-height:1.3;white-space:nowrap;text-alig
    const halo=document.createElement('div');halo.className='pom-glow';layer.appendChild(halo);
    const pic=source.cloneNode(true);pic.className='pom-fly';pic.style.left=r.left+'px';pic.style.top=r.top+'px';pic.style.width=r.width+'px';layer.appendChild(pic);
    const dx=innerWidth*.50-(r.left+r.width/2),dy=innerHeight*.47-(r.top+r.height/2);
-   const peak=Math.min(4.3,Math.max(3.1,Math.min(innerWidth*1.55/r.width,innerHeight*.89/r.height)));
+   const peak=Math.min(4.1,Math.max(2.6,Math.min(innerWidth*.98/r.width,innerHeight*.80/r.height)));
    const a=animate(pic,[
      {offset:0,opacity:1,transform:'translate(0,0) scale(1) rotate(8deg)'},
      {offset:.24,opacity:1,transform:`translate(${dx}px,${dy}px) scale(${peak*1.1}) rotate(-8deg)`},
