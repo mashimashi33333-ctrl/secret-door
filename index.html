@@ -170,12 +170,9 @@ h1{font-size:clamp(18px,5.4vw,22px);line-height:1.3;white-space:nowrap;text-alig
   .book.cake-settled .cake-bob .flame{animation:none!important;opacity:.96;transform:translate(-50%,-100%) rotate(-12deg)}
 }
 
-/* カードの内側に日付用の余白を確保して、右下に控えめに配置 */
-.book{height:680px}
-.page{padding-bottom:36px}
-.book .page .date-stamp{position:absolute;right:23px;bottom:9px;z-index:2;font-size:11px;font-weight:800;letter-spacing:.09em;color:#b792ad;opacity:0;transform:translateY(6px)}
+/* 日付はケーキの下、ゆずのメッセージの直前に右寄せ */
+.stage .date-stamp{position:absolute;right:10px;bottom:3px;z-index:8;font-size:11px;font-weight:800;letter-spacing:.09em;color:#b792ad;opacity:0;transform:translateY(6px);white-space:nowrap;pointer-events:none}
 .book.pom-settled .date-stamp{animation:noteIn .48s ease 1.65s both}
-@media(max-width:380px){.book{height:655px}.page{padding-bottom:32px}}
 @media(prefers-reduced-motion:reduce){.book.pom-settled .date-stamp{animation:none;opacity:.9;transform:none}}
 </style></head>
 <body>
@@ -203,12 +200,12 @@ h1{font-size:clamp(18px,5.4vw,22px);line-height:1.3;white-space:nowrap;text-alig
        <i class="flame"></i><i class="flame"></i><i class="flame"></i><i class="flame"></i><i class="flame"></i><i class="flame"></i><i class="flame"></i><i class="flame"></i>
      </div></div>
      <span class="spark s1">✨</span><span class="spark s2">💛</span><span class="spark s3">⭐</span><span class="spark s4">✨</span><span class="spark s5">💖</span><span class="spark s6">✨</span>
+    <div class="date-stamp">2026.11.15</div>
    </div>
    <div class="notes">
     <section class="note"><div class="who">🎂 ゆずから</div><p class="message">パパお誕生日おめでとう🎊<br>毎日お仕事がんばってね😏</p></section>
     <section class="note"><div class="who">💖 ママから</div><p class="message">誕生日おめでとう！<br>いつもありがとう💖</p></section>
    </div>
-   <div class="date-stamp">2026.11.15</div>
   </div>
   <button class="cover" id="cover" type="button" aria-label="カードをひらく">
     <span class="cover-top" aria-hidden="true"></span>
